@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mirage é uma empresa focada em promover a melhor experiência da sua vida 
+         morando em uma casa dos seus sonhos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="keywords" content="Mirage, casa dos sonhos 
+    morar no Rio de Janeiro, casa de luxo">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="stylecontato.css">
+    <title>contato</title>
+</head>
+<div role="main" id="content">
+
+<body>
+  <!-- Header Section -->
+    <div class="container-principal">
+        
+        <header>    
+            <a href="./index.html">Mirage</a>  
+                <nav class="navbar" id="menu-icon">
+                               
+                    <a href="../index.html">Início</a>
+                    <a href="./Imoveis.html">Imóveis</a>
+                    <a href="./quemsomos.html">Quem Somos</a>
+                    <a href="./Contato.html">Contato</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                        </a>
+               
+            </nav>
+        </header>
+
+
+    <section>
+
+        <div class="containerContato">
+
+            <h1 class="center">Fale conosco</h1>
+            <p class="center">Entre em contato conosco será um prazer ajudá-lo a realizar o seu sonho!</p>
+        
+            <form action="/enviar-contato" method="post">
+
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome">        
+              <label for="email">Email:</label>
+              <input type="email" id="email">    
+              
+              <label for="password">Senha</label>
+              <input type="password" id="password">
+              <label for="buscando imóveis">Buscando imóveis:</label>
+
+              <select name="buscando imóveis" id="imóveis">
+              <option value="Comprar-Casa">Buscar por:</option>
+              <option value="comprar Apartamento">Comprar Casa</option>
+              <option value="comprar Apartamento">Comprar Apartamento</option>
+              <option value="Vender meu Apartamento">Vender meu Apartamento</option>
+              <option value="Vender minha Casa">Vender minha Casa</option>
+              <option value="comprar uma Chacara">Comprar uma Chacara</option> 
+            </select>
+        
+              <label for="mensagem">Mensagem:</label>
+              <textarea name="mensagem" id="mensagem"></textarea>
+
+              
+        
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        
+        </section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <script src="scriptcontato.js"></script>
+
+   
+        <footer>
+            <div class="footer">
+                <p>&copy; 2024 Mirage living Home. Todos os direitos reservados.</p>
+                <a href="#">&#9650;Ir ao topo</a>
+            </div>
+        </footer>
+</body>
+</div>
+</div>
+</html>
+
