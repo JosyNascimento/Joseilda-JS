@@ -9,12 +9,17 @@ function myFunction() {
     }
   } 
 
+
+
+  //form no hero
 document.getElementById('searchForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const searchQuery = document.getElementById('search').value.toLowerCase();
     filterProperties(searchQuery);
 });
 
+
+//objetos nos cards dentro de um array
 const properties = [
     {
         id: 1,
@@ -186,6 +191,14 @@ document.getElementById('simulador-form').addEventListener('submit', function(ev
 });
 
 
+//botão limpar formulário
+function limparFormulario() {
+    // Obtém o formulário pelo ID
+    var formulario = document.getElementById('simulador-form');
+    
+    // Limpa todos os campos do formulário
+    formulario.reset();
+}
 
 //  fechar o resultado ao clicar no botão "Fechar"
 const fecharResultadoBtn = document.getElementById('fecharResultado');

@@ -241,7 +241,7 @@ h1 {
 }
   
 
-/*
+
 .fechar-btn {
     background-color: #333;
     color: #fff;
@@ -251,16 +251,16 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     float: right;
+   
 }
+
 
 .fechar-btn:hover {
     background-color: #555;
 }
 
-.fechar-btn:focus {
-    outline: none;
-}
-*/
+
+
 
 
 
@@ -302,29 +302,3 @@ a:hover {
         width: 50%;
     }
 }
-
-.about-us {
-    padding: 20px 0;
-    background-color: #ffffff;
-}
-
-.about-us h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.about-us p {
-    text-align: justify;
-    line-height: 1.6;
-}
-
-.about-us h3 {
-    margin-top: 20px;
-}
-
-.about-us ul {
-    list-style: disc;
-    margin-left: 20px;
-    line-height: 1.6;
-}
-
