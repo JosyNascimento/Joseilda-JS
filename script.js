@@ -210,3 +210,9 @@ fecharResultadoBtn.addEventListener('click', () => {
     fecharResultadoBtn.style.display = 'none'; // Oculta o botão "Fechar"
 });
 
+//footer responssivo
+document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.createElement('footer');
+    footer.className = 'footer';
+    document.body.appendChild(footer);
+});

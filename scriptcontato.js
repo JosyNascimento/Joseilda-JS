@@ -1,3 +1,17 @@
+/* nav"responsive" class para a nav */
+function myFunction() {
+    var x = document.getElementById("menu-icon");
+    if (x.className === "navbar") {
+      x.className += "responsive";
+    } else {
+      x.className = "navbar";
+    }
+  } 
+
+
+
+
+
 const form = document. querySelector("#form");
 const emailInput = document.querySelector("#password");
 const passwordInput = document.querySelector("#password");

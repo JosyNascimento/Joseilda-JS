@@ -1,3 +1,17 @@
+/* nav"responsive" class para a nav */
+function myFunction() {
+  var x = document.getElementById("menu-icon");
+  if (x.className === "navbar") {
+    x.className += "responsive";
+  } else {
+    x.className = "navbar";
+  }
+} 
+
+
+
+
+
 const carousel = document.querySelector('.carousel');
 const slides = Array.from(carousel.children);
 
