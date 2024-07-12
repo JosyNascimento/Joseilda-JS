@@ -8,36 +8,6 @@ function myFunction() {
     }
   } 
 
-// Definição das configurações de animação
-const animationConfig = {
-    titleAnimation: {
-      selector: 'h1.center',
-      animationClass: 'fade-in',
-      delay: 0 // sem atraso
-    },
-    paragraphAnimation: {
-      selector: 'p.center',
-      animationClass: 'fade-in-delayed',
-      delay: 500 // atraso de 0.5 segundos
-    }
-  };
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    // Aplica as animações conforme as configurações definidas
-    applyAnimation(animationConfig.titleAnimation);
-    applyAnimation(animationConfig.paragraphAnimation);
-  });
-  
-  function applyAnimation(animationConfig) {
-    const element = document.querySelector(animationConfig.selector);
-    if (element) {
-      element.classList.add(animationConfig.animationClass);
-      element.style.animationDelay = `${animationConfig.delay}ms`;
-    }
-  }
-
-
-
 const form = document. querySelector("#form");
 const emailInput = document.querySelector("#password");
 const passwordInput = document.querySelector("#password");
@@ -90,7 +60,7 @@ form.submit();
 
 //função que valida email
 function isEmailValid(email) {
-    // cri uma regex para validar email
+    // cria uma regex para validar email
 
     const emailRegex = new RegEx(
     /^[a-zA-z0-9._-]+@[a-zA-A0-9._-]+\.[a-zZ-z]{2,}$/
@@ -120,5 +90,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
       if (!confirmation) {
         event.preventDefault(); // Impede a limpeza do formulário se a confirmação for negativa
       }
+    });
+  });
+
+
+  function limparFormulario() {
+    document.getElementById("contactForm").reset();
+  }
+
+  // Função para enviar o formulário via Fetch
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    // Coleta os dados do formulário
+    const formData = new FormData(this);
+
+    // Envia os dados do formulário via Fetch
+    fetch('enviar-contato.php', {
+      method: 'POST',
+      body: formData
+    })
+    
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Ocorreu um erro ao enviar o formulário.');
+      }
+      return response.text();
+    })
+    .then(data => {
+      console.log('Resposta do servidor:', data);
+      
+      alert('Formulário enviado com sucesso!');
+    })
+    .catch(error => {
+      console.error('Erro:', error);
+    
+      alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.');
     });
   });
