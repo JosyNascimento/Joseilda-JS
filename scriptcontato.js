@@ -8,7 +8,33 @@ function myFunction() {
     }
   } 
 
-
+// Definição das configurações de animação
+const animationConfig = {
+    titleAnimation: {
+      selector: 'h1.center',
+      animationClass: 'fade-in',
+      delay: 0 // sem atraso
+    },
+    paragraphAnimation: {
+      selector: 'p.center',
+      animationClass: 'fade-in-delayed',
+      delay: 500 // atraso de 0.5 segundos
+    }
+  };
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    // Aplica as animações conforme as configurações definidas
+    applyAnimation(animationConfig.titleAnimation);
+    applyAnimation(animationConfig.paragraphAnimation);
+  });
+  
+  function applyAnimation(animationConfig) {
+    const element = document.querySelector(animationConfig.selector);
+    if (element) {
+      element.classList.add(animationConfig.animationClass);
+      element.style.animationDelay = `${animationConfig.delay}ms`;
+    }
+  }
 
 
 
@@ -85,3 +111,14 @@ function validatePassword(password, minDigits) {
     }
     return false
 }
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const resetButton = document.querySelector('form button[type="reset"]');
+    resetButton.addEventListener('click', function(event) {
+      const confirmation = confirm('Tem certeza de que deseja limpar o formulário?');
+      if (!confirmation) {
+        event.preventDefault(); // Impede a limpeza do formulário se a confirmação for negativa
+      }
+    });
+  });

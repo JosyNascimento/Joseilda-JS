@@ -1,19 +1,37 @@
 
 body {
 
-  background-color: #ffffff;
+  background-image: url(img/call-center.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 
 }
 
-.container {
+
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    background-color: #ffffff46;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Certifique-se de que o pseudo-elemento fique atrás do conteúdo */
+  }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 
 header {
   background-color: #333;
@@ -100,6 +118,41 @@ body{
     color: #0d0d0d;
 
   }
+
+
+
+  
+  form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px; /* Define um tamanho fixo para os botões */
+  }
+
+  form .button-group {
+    display: flex;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 10px;
+  }
+  /* Estilo para o botão Enviar */
+  form button[type="submit"] {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+  }
+  
+  /* Estilo para o botão Limpar */
+form button[type="reset"] {
+  background-color: #f44336; /* Vermelho */
+  color: white;
+}
+
+/* Estilo ao passar o mouse */
+form button:hover {
+  opacity: 0.8;
+}
 
   .imóveis option {
     color: #ffffff;
