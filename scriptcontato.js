@@ -128,3 +128,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
       alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.');
     });
   });
+
+
+  //footer responssivo
+document.addEventListener('DOMContentLoaded', function() {
+  const footer = document.createElement('footer');
+  footer.className = 'footer';
+  document.body.appendChild(footer);
+});

@@ -8,48 +8,38 @@ function myFunction() {
   }
 } 
 
+//biblioteca swiper js
+const swiper = new Swiper('.slider-wrapper', {
+  slidesPerView: 50, // Espaço entre os slides
+  direction: 'vertical',
+  loop: true,
+  grabCursor: true,
+  
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
 
-
-
-
-const carousel = document.querySelector('.carousel');
-const slides = Array.from(carousel.children);
-
-let currentIndex = 0;
-const slideWidth = slides[0].getBoundingClientRect().width;
-
-// Arrange slides next to each other
-slides.forEach((slide, index) => {
-  slide.style.left = slideWidth * index + 'px';
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
-function moveToSlide(currentIndex, targetIndex) {
-  const currentSlide = slides[currentIndex];
-  const targetSlide = slides[targetIndex];
-  carousel.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-  currentSlide.classList.remove('active');
-  targetSlide.classList.add('active');
-  return targetIndex;
-}
-
-// Next button functionality
-document.getElementById('nextBtn').addEventListener('click', () => {
-  const currentSlide = slides[currentIndex];
-  let nextIndex = currentIndex + 1;
-  if (nextIndex >= slides.length) {
-    nextIndex = 0;
-  }
-  currentIndex = moveToSlide(currentIndex, nextIndex);
-});
-
-// Previous button functionality
-document.getElementById('prevBtn').addEventListener('click', () => {
-  const currentSlide = slides[currentIndex];
-  let prevIndex = currentIndex - 1;
-  if (prevIndex < 0) {
-    prevIndex = slides.length - 1;
-  }
-  currentIndex = moveToSlide(currentIndex, prevIndex);
+//responssive breackpoints
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    }
+    620: {
+      slidesPerView: 2
+    }
+    1024: {
+      slidesPerView: 3
+    }
+  
 });
 
 

@@ -140,11 +140,9 @@ body{
     color: white;
   }
   
-  /* Estilo para o botão Limpar */
-form button[type="reset"] {
-  background-color: #f44336; /* Vermelho */
-  color: white;
-}
+
+  
+  
 
   form button {
     margin-block: 10px;
@@ -194,12 +192,10 @@ imput, select, textarea {
 
 
   
-footer {
-  
+footer {  
   background-color: #333;
-  height: 30px;
-  color: white; 
-  padding: 10px;
+  height: 30px; 
+  padding: 0px;
 
 }
 
@@ -208,18 +204,24 @@ footer {
   display: flex;
   justify-content: space-between; /* Espaço entre os elementos */
   align-items: center; /* Centraliza verticalmente os elementos */
+  background-color: #333;
 }
 
 
 .footer-content p { 
   font-size: x-small;
   display: flex; 
-  margin-top: 30px;  
+  margin-top: 20px;  
+  color: #ffffff;
+  margin-left: 15px;
+  
+  
 }
 
 
-.footer-content a {
-  margin-left: 10px;  
+ a {
+  margin-right: 20px; 
+  padding-block: 20px;
 }
 
 a:hover {
@@ -230,7 +232,7 @@ a:hover {
 @media (max-width: 600px) {
  
   .footer-content p, .footer-content a {
-      margin-block: 10px;
+      margin-block: 40px;
   }
 
   .footer-content a {
@@ -244,4 +246,5 @@ a:hover {
     margin-top: 0px;  
    
   }
+
 }

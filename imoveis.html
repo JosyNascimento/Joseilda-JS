@@ -12,6 +12,10 @@
     morar no Rio de Janeiro, casa de luxo">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <!--link swipper JS CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+		<!--link swipper JS CSS-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <link rel="stylesheet" href="styleimoveis.css">
     <title>Mirage Living Home</title>
 </head>
@@ -35,36 +39,496 @@
       </nav>
   </header>
 
- 
-<section>
-    <div class="carousel-container">
-        <h1>Conheça os nossos Imóveis</h1>
-         
+  <section class="banner-home" style="background-image: url('img/bannerimoveis.jpg');">
+		<div class="container-banner">
+			<h4>Encontre o imóvel dos seus sonhos!</h4>
+			<form method="GET" action="https://josynascimento.github.io/Joseilda-JS/index.html" id="form-home-desk">
+				<select name="state" id="f-select">
+					<option selected="" disabled="">Estado</option>
+											<option value="SP">São Paulo</option>
+											<option selected="" value="RJ">Rio de Janeiro</option>
+									</select>
+				
+				<select name="regions" id="s-select">
+					<option value="">Região</option>
+											<option value="63">Baixada Fluminense</option>
+											<option value="65">Centro</option>
+											<option value="48">Niterói</option>
+											<option value="50">São Gonçalo</option>
+											<option value="51">Zona Norte</option>
+											<option value="52">Zona Oeste</option>
+											<option value="68">Zona Portuária</option>
+									</select>
+				<select name="bedrooms" id="t-select">
+                <option value="">Dormitórios</option>
+                <option value="0">Studio</option>
+                <option value="1">1 dormitório</option>
+                <option value="2">2 dormitórios</option>
+                <option value="3">3 dormitórios</option>
+            </select>
+				<button class="submit-buscar">
+					<img src="https://josynascimento.github.io/Joseilda-JS/index.html" alt="Buscar">
+				</button>
+			</form>
+		</div>
+	</section>
 
-        
-            <div class="carousel">
-              <div class="slide">
-                <img src="img/apartamento 1/foto-1.jpg" alt="Imóvel 1">
-                <div class="slide-caption">Imóvel 1</div>
-              </div>
-              <div class="slide">
-                <img src="img/apartamento 1/foto-6.jpg" alt="Imóvel 2">
-                <div class="slide-caption">Imóvel 2</div>
-              </div>
-              <div class="slide">
-                <img src="img/apartamento 1/foto-8.jpg" alt="Imóvel 3">
-                <div class="slide-caption">Imóvel 3</div>
-              </div>
-              <!-- Adicione mais slides conforme necessário -->
-            </div>
-            
-            <button id="prevBtn" class="control-btn prev-btn">&lt;</button>
-            <button id="nextBtn" class="control-btn next-btn">&gt;</button>
+ <main class="conteúdo-principal">
+  <section class="pd-40 bg-gray">
+                <h3 class="text-center">
+                    Imóveis no Rio de Janeiro
+                </h3>  
+ </section> 
+  <!-- If we need pagination -->
+   
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+<div class="container swiper">
+  <div class="slider-wrapper">
+    <div class="card-list swiper-wrapper">
+      <div class="box-product swiper-slide"> <!--card-item-->
+        <img class="img-product" src="img/condominiolifeisgood.jpg" alt="">
+        <div class="status release"><h1>Lançamento</h1></div>
+        <button class="detalhes">Detalhes</button> 
+        <h4>Residencial Mar e Sol</h4>
+        <span>Centro RJ</span>
+        <p>1 e 2 quartos com lazer surpreendente</p>
+        <div class="options-building">
+          <div class="box-option">
+            <img src="img/apartamento 1/salão de festas.png" alt="Salão de Festas">
+            <p>Salão de Festas</p>
           </div>
-          <a href="./imoveis.html" button class="details-btn">Ver Detalhes</button>
-         </a>
-<br><br>
-</section>
+          <div class="box-option">
+            <img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira">
+            <p>Churrasqueira</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/academia.png" alt="Academia">
+            <p>Academia</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/brinquedoteca.png" alt="Brinquedoteca">
+            <p>Brinquedoteca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+   
+<div class="box-product swiper-slide"> <!--card-item-->
+        <img class="img-product" src="img/condominiolifeisgood.jpg" alt="">
+        <div class="status release"><h1>Lançamento</h1></div>
+        <button class="detalhes">Detalhes</button> 
+        <h4>Residencial Mar e Sol</h4>
+        <span>Centro RJ</span>
+        <p>1 e 2 quartos com lazer surpreendente</p>
+        <div class="options-building">
+          <div class="box-option">
+            <img src="img/apartamento 1/salão de festas.png" alt="Salão de Festas">
+            <p>Salão de Festas</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira">
+            <p>Churrasqueira</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/academia.png" alt="Academia">
+            <p>Academia</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/brinquedoteca.png" alt="Brinquedoteca">
+            <p>Brinquedoteca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+	<div class="box-product swiper-slide"> <!--card-item-->
+        <img class="img-product" src="img/condominiolifeisgood.jpg" alt="">
+        <div class="status release"><h1>Lançamento</h1></div>
+        <button class="detalhes">Detalhes</button> 
+        <h4>Residencial Mar e Sol</h4>
+        <span>Centro RJ</span>
+        <p>1 e 2 quartos com lazer surpreendente</p>
+        <div class="options-building">
+          <div class="box-option">
+            <img src="img/apartamento 1/salão de festas.png" alt="Salão de Festas">
+            <p>Salão de Festas</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira">
+            <p>Churrasqueira</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/academia.png" alt="Academia">
+            <p>Academia</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/brinquedoteca.png" alt="Brinquedoteca">
+            <p>Brinquedoteca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+	<div class="box-product swiper-slide"> <!--card-item-->
+        <img class="img-product" src="img/condominiolifeisgood.jpg" alt="">
+        <div class="status release"><h1>Lançamento</h1></div>
+        <button class="detalhes">Detalhes</button> 
+        <h4>Residencial Mar e Sol</h4>
+        <span>Centro RJ</span>
+        <p>1 e 2 quartos com lazer surpreendente</p>
+        <div class="options-building">
+          <div class="box-option">
+            <img src="img/apartamento 1/salão de festas.png" alt="Salão de Festas">
+            <p>Salão de Festas</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira">
+            <p>Churrasqueira</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/academia.png" alt="Academia">
+            <p>Academia</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/brinquedoteca.png" alt="Brinquedoteca">
+            <p>Brinquedoteca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+	<div class="box-product swiper-slide"> <!--card-item-->
+        <img class="img-product" src="img/condominiolifeisgood.jpg" alt="">
+        <div class="status release"><h1>Lançamento</h1></div>
+        <button class="detalhes">Detalhes</button> 
+        <h4>Residencial Mar e Sol</h4>
+        <span>Centro RJ</span>
+        <p>1 e 2 quartos com lazer surpreendente</p>
+        <div class="options-building">
+          <div class="box-option">
+            <img src="img/apartamento 1/salão de festas.png" alt="Salão de Festas">
+            <p>Salão de Festas</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira">
+            <p>Churrasqueira</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/academia.png" alt="Academia">
+            <p>Academia</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/brinquedoteca.png" alt="Brinquedoteca">
+            <p>Brinquedoteca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+	<div class="box-product swiper-slide"> <!--card-item-->
+        <img class="img-product" src="img/condominiolifeisgood.jpg" alt="">
+        <div class="status release"><h1>Lançamento</h1></div>
+        <button class="detalhes">Detalhes</button> 
+        <h4>Residencial Mar e Sol</h4>
+        <span>Centro RJ</span>
+        <p>1 e 2 quartos com lazer surpreendente</p>
+        <div class="options-building">
+          <div class="box-option">
+            <img src="img/apartamento 1/salão de festas.png" alt="Salão de Festas">
+            <p>Salão de Festas</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira">
+            <p>Churrasqueira</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/academia.png" alt="Academia">
+            <p>Academia</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/brinquedoteca.png" alt="Brinquedoteca">
+            <p>Brinquedoteca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+	<div class="box-product swiper-slide"> <!--card-item-->
+        <img class="img-product" src="img/condominiolifeisgood.jpg" alt="">
+        <div class="status release"><h1>Lançamento</h1></div>
+        <button class="detalhes">Detalhes</button> 
+        <h4>Residencial Mar e Sol</h4>
+        <span>Centro RJ</span>
+        <p>1 e 2 quartos com lazer surpreendente</p>
+        <div class="options-building">
+          <div class="box-option">
+            <img src="img/apartamento 1/salão de festas.png" alt="Salão de Festas">
+            <p>Salão de Festas</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira">
+            <p>Churrasqueira</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/academia.png" alt="Academia">
+            <p>Academia</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/brinquedoteca.png" alt="Brinquedoteca">
+            <p>Brinquedoteca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+	<div class="box-product swiper-slide"> <!--card-item-->
+        <img class="img-product" src="img/condominiolifeisgood.jpg" alt="">
+        <div class="status release"><h1>Lançamento</h1></div>
+        <button class="detalhes">Detalhes</button> 
+        <h4>Residencial Mar e Sol</h4>
+        <span>Centro RJ</span>
+        <p>1 e 2 quartos com lazer surpreendente</p>
+        <div class="options-building">
+          <div class="box-option">
+            <img src="img/apartamento 1/salão de festas.png" alt="Salão de Festas">
+            <p>Salão de Festas</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira">
+            <p>Churrasqueira</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/academia.png" alt="Academia">
+            <p>Academia</p>
+          </div>
+          <div class="box-option">
+            <img src="img/apartamento 1/brinquedoteca.png" alt="Brinquedoteca">
+            <p>Brinquedoteca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="box-product swiper-slide"> <!--card-item-->
+		<img class="img-product" src="img/condominiolifeisgood.jpg">
+		<div class="about-building">
+			<div class="status in-progress"><h1>Em Obras</h1></div>
+			<h4>My Jacarepaguá Life</h4>
+			<span>Jacarepaguá</span>
+			<p>Apartamentos de 1 e 2 quartos</p>
+			<div class="options-building">
+	<div class="box-option">
+		<img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira"><p>Churrasqueira</p>
+	</div>
+	<div class="box-option">
+	    <img src="img/apartamento 1/crosfit externo.png"><p>Crossfit Externo</p>
+	</div>
+	<div class="box-option">
+		<img src="img/apartamento 1/campo societe.png" alt="Campo Society"><p>Campo Society</p>
+	</div>
+	<div class="box-option">
+		<img src="" alt="Petplace"><p>Petplace</p>
+	</div>
+		</div>
+		    </div>							
+	           </div>
+
+			   <div class="box-product swiper-slide"> <!--card-item-->
+		<img class="img-product" src="img/condominiolifeisgood.jpg" alt="Nova Norte - Samba">
+		<div class="about-building">
+			<div class="status in-progress"><h1>Em Obras</h1></div>
+			<h4>Nova Norte - Samba</h4>
+			<span>Irajá</span>
+			<p>1, 2 e 3 quartos com lazer completo</p>
+			<div class="options-building">
+		<div class="box-option">
+			<img src="img/piscina.jpeg" alt="Piscina"><p>Piscina</p>
+		</div>
+	<div class="box-option">
+		<img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira"><p>Churrasqueira</p>
+		</div>
+	<div class="box-option">
+		<img src="img/apartamento 1/petplace.png" alt="Pet Place"><p>Pet Place</p>
+	</div>
+	<div class="box-option">
+		<img src="img/apartamento 1/coowork.png" alt="Coworking"><p>Coworking</p>
+	</div>
+		</div>
+		   </div>							
+	          </div>
+
+
+			  <div class="box-product swiper-slide"> <!--card-item-->
+		<img class="img-product" src="" alt="Orla Recreio - Praia do Pontal">
+		<div class="about-building">
+			<div class="status in-progress"><h1>Em Obras</h1></div>
+			<h4>Orla Recreio - Praia do Pontal</h4>
+			<span>Recreio</span>
+			<p>1, 2 e 3 quartos com lazer completo</p>
+			<div class="options-building">
+	<div class="box-option">
+		<img src="" alt="Piscina"><p>Piscina</p>
+	    </div>
+	<div class="box-option">
+		<img src="img/apartamento 1/coowork.png" alt="Coworking"><p>Coworking</p>
+		</div>
+	<div class="box-option">
+		<img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira"><p>Churrasqueira</p>
+		</div>
+	<div class="box-option">
+		<img src="img/apartamento 1/salão de festas.png" alt="Salão de festas"><p>Salão de festas</p>
+		</div>
+			</div>
+		       </div>							
+	                </div>
+
+	
+
+					<div class="box-product swiper-slide"> <!--card-item-->
+		<img class="img-product" src="" alt="My Jacarepaguá Life">
+		<div class="about-building">
+			<div class="status in-progress"><h1>Em Obras</h1></div>
+			<h4>My Jacarepaguá Life</h4>
+			<span>Jacarepaguá</span>
+			<p>Apartamentos de 1 e 2 quartos</p>
+			<div class="options-building">
+	<div class="box-option">
+		<img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira"><p>Churrasqueira</p>
+		</div>
+	<div class="box-option">
+		<img src="img/apartamento 1/crosfit externo.png" alt="Crossfit Externo"><p>Crossfit Externo</p>
+		</div>
+    <div class="box-option">
+		<img src="img/apartamento 1/campo societe.png" alt="Campo Society"><p>Campo Society</p>
+		</div>
+	<div class="box-option">
+		<img src="img/apartamento 1/petplace.png" alt="Petplace"><p>Petplace</p>
+		</div>
+			</div>
+		       </div>							
+	               </div>
+
+	<div class="box-product swiper-slide"> <!--card-item-->
+		<img class="img-product" src="" alt="Nova Norte - Samba">
+		<div class="about-building">
+			<div class="status in-progress"><h1>Em Obras</h1></div>
+			<h4>Nova Norte - Samba</h4>
+			<span>Irajá</span>
+			<p>1, 2 e 3 quartos com lazer completo</p>
+			<div class="options-building">
+	<div class="box-option">
+		<img src="img/piscina.jpeg" alt="Piscina"><p>Piscina</p>
+	    </div>
+		<div class="box-option">
+			<img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira"><p>Churrasqueira</p>
+			</div>
+		<div class="box-option">
+			<img src="img/apartamento 1/crosfit externo.png" alt="Crossfit Externo"><p>Crossfit Externo</p>
+			</div>
+		<div class="box-option">
+			<img src="img/apartamento 1/campo societe.png" alt="Campo Society"><p>Campo Society</p>
+			</div>
+		<div class="box-option">
+			<img src="img/apartamento 1/petplace.png" alt="Petplace"><p>Petplace</p>
+		</div>
+			</div>
+		         </div>							
+	                </div>
+
+	
+
+					<div class="box-product swiper-slide"> <!--card-item-->
+		<img class="img-product" src="" alt="Orla Recreio - Praia do Pontal">
+		<div class="about-building">
+			<div class="status in-progress"><h1>Em Obras</h1></div>
+			<h4>Orla Recreio - Praia do Pontal</h4>
+			<span>Recreio</span>
+			<p>1, 2 e 3 quartos com lazer completo</p>
+			<div class="options-building">
+				<div class="box-option">
+					<img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira"><p>Churrasqueira</p>
+					</div>
+				<div class="box-option">
+					<img src="img/apartamento 1/crosfit externo.png" alt="Crossfit Externo"><p>Crossfit Externo</p>
+					</div>
+				<div class="box-option">
+					<img src="img/apartamento 1/campo societe.png" alt="Campo Society"><p>Campo Society</p>
+					</div>
+				<div class="box-option">
+					<img src="img/apartamento 1/petplace.png" alt="Petplace"><p>Petplace</p>
+					</div>
+														<div class="box-option">
+						<img src="" alt="Salão de festas">
+						<p>Salão de festas</p>
+					</div>
+									 			</div>
+		</div>							
+	</div>
+
+	<div class="box-product swiper-slide"> <!--card-item-->
+		<img class="img-product" src="" alt="My Jacarepaguá Life">
+		<div class="about-building">
+			<div class="status in-progress"><p>Em Obras</p></div>
+			<h4>My Jacarepaguá Life</h4>
+			<span>Jacarepaguá</span>
+			<p>Apartamentos de 1 e 2 quartos</p>
+			<div class="options-building">
+				<div class="box-option">
+					<img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira"><p>Churrasqueira</p>
+					</div>
+				<div class="box-option">
+					<img src="img/apartamento 1/crosfit externo.png" alt="Crossfit Externo"><p>Crossfit Externo</p>
+					</div>
+				<div class="box-option">
+					<img src="img/apartamento 1/campo societe.png" alt="Campo Society"><p>Campo Society</p>
+					</div>
+				<div class="box-option">
+					<img src="img/apartamento 1/petplace.png" alt="Petplace"><p>Petplace</p>
+					</div>
+		               </div>							
+	                           </div>
+							</div>							
+						</div>
+
+
+	<div class="box-product swiper-slide"> <!--card-item-->
+		<img class="img-product" src="" alt="Nova Norte - Samba">
+		<div class="about-building">
+			<div class="status in-progress"><p>Em Obras</p></div>
+			<h4>Nova Norte - Samba</h4>
+			<span>Irajá</span>
+			<p>1, 2 e 3 quartos com lazer completo</p>
+			<div class="options-building">
+				<div class="box-option">
+					<img src="img/apartamento 1/churrasqueira.png" alt="Churrasqueira"><p>Churrasqueira</p>
+					</div>
+				<div class="box-option">
+					<img src="img/apartamento 1/crosfit externo.png" alt="Crossfit Externo"><p>Crossfit Externo</p>
+					</div>
+				<div class="box-option">
+					<img src="img/apartamento 1/campo societe.png" alt="Campo Society"><p>Campo Society</p>
+					</div>
+				<div class="box-option">
+					<img src="img/apartamento 1/petplace.png" alt="Petplace"><p>Petplace</p>
+	</div>
+	     </div>							
+	          </div>
+                    </div>
+                         </div>																																																																																																																																																										<ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 4" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide03" aria-label="2 of 4" tabindex="-1">2</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide06" aria-label="3 of 4" tabindex="-1">3</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide09" aria-label="4 of 4" tabindex="-1">4</button></li></ul></div>
+                               </div>
+                                  </div>
+                                         </div>
+                                             </div>
+	
+</main>    
+
 
 <footer>
   <div class="footer-content">
@@ -73,6 +537,8 @@
   </div>
 </footer>
 <script src="scriptimoveis.js"></script>
+
+
 </body>
 </div>
 </div>
