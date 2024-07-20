@@ -1,33 +1,28 @@
 /* sobre nós*/
 
-
 body {
-    background-image: url(img/fundo-de-ficcao.avif) ;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  background-image: url(img/fundo-de-ficcao.avif);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  container-principal{
-
-
-  }
-  header {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    padding: 10px 0;
+container-principal {
 }
-  
- 
+header {
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+}
+
 a {
   margin: 0;
   display: inline-block;
   padding-left: 20px;
- font-size: 25px;
- color: #ffffff;
- text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 nav {
@@ -48,14 +43,14 @@ nav .icon {
 
 /* mudar a cor dos links on hover */
 .navbar a:hover {
- 
-  color:  #2ab300;
+  color: #2ab300;
 }
-
 
 /* quando a tela é menor que  600 pixels wide, esconde todos os links, exceto o  início. */
 @media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
+  .navbar a:not(:first-child) {
+    display: none;
+  }
   .navbar a.icon {
     float: right;
     display: block;
@@ -64,7 +59,9 @@ nav .icon {
 
 /* O "responsive" class é adicionada a nav com JavaScriptquando usado clicks no icone. */
 @media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {
+    position: relative;
+  }
   .navbar.responsive a.icon {
     position: absolute;
     right: 0;
@@ -75,63 +72,55 @@ nav .icon {
     display: block;
     text-align: left;
   }
-} 
-
+}
 
 .hero {
-    background: url('img/hero2.jpg') no-repeat center/cover;
-    height:400px;
-    width: auto;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background: url("img/hero2.jpg") no-repeat center/cover;
+  height: 400px;
+  width: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero h2 {
   display: flex;
-    font-size: 3em;
-    margin: 0;
+  font-size: 3em;
+  margin: 0;
 }
 
 .container2 h2 {
-    text-align: center;
-    margin-top: 5px;
-    color: #f6f8fb;
-    font-family: "kalam",cursive;
-    text-decoration: double;
+  text-align: center;
+  margin-top: 5px;
+  color: #f6f8fb;
+  font-family: "kalam", cursive;
+  text-decoration: double;
 }
 
 main {
   text-align: center;
   margin-top: 10px;
   color: #f6f8fb;
-  font-family: "kalam",cursive;
+  font-family: "kalam", cursive;
   text-decoration: double;
   font-size: x-large;
   padding: 20px;
 }
 
-.main ul , li {
+.main ul,
+li {
   display: flex;
   padding: 20px;
   padding-bottom: 20px;
-  
 }
 
-
-
-
-
-  
-footer {  
+footer {
   background-color: #333;
-  height: 30px; 
+  height: 30px;
   padding: 0px;
-
 }
-
 
 .footer-content {
   display: flex;
@@ -140,20 +129,16 @@ footer {
   background-color: #333;
 }
 
-
-.footer-content p { 
+.footer-content p {
   font-size: x-small;
-  display: flex; 
-  margin-top: 20px;  
+  display: flex;
+  margin-top: 20px;
   color: #ffffff;
   margin-left: 15px;
-  
-  
 }
 
-
 a {
-  margin-right: 20px; 
+  margin-right: 20px;
   padding-block: 20px;
 }
 
@@ -161,25 +146,20 @@ a:hover {
   color: #1cb850;
 }
 
-
 @media (max-width: 600px) {
- 
-  .footer-content p, .footer-content a {
-      margin-block: 40px;
+  .footer-content p,
+  .footer-content a {
+    margin-block: 40px;
   }
 
   .footer-content a {
-      align-self: center; /* Centraliza o link no footer */
-      font-size: medium;
+    align-self: center; /* Centraliza o link no footer */
+    font-size: medium;
   }
 
-  .footer-content p { 
+  .footer-content p {
     font-size: x-small;
-    display: flex; 
-    margin-top: 0px;  
-   
+    display: flex;
+    margin-top: 0px;
   }
-
 }
-
-

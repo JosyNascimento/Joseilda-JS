@@ -3,10 +3,10 @@
 
 
 body {
-  outline: none;
+
   align-items: center;
   justify-content: center;
-  background-color: #7c6b6b;
+  background-image: url("img/fundo-de-ficcao.jpg");
   font-family: Ubuntu,sans-serif !important;
    margin: 0;
   padding: 0;

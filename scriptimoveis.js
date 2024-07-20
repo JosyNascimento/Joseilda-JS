@@ -9,39 +9,39 @@ function myFunction() {
 } 
 
 //biblioteca swiper js
-const swiper = new Swiper('.slider-wrapper', {
-  slidesPerView: 50, // Espaço entre os slides
-  direction: 'vertical',
+const swiper = new Swiper('.Swiper', {
+  slidesPerView: 4, // Espaço entre os slides
+  direction: 'horizontal',
   loop: true,
-  grabCursor: true,
-  
-  pagination: {
+  },
+
+  pagination, {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
-  },
-
+   
+  }, 
+  
+  autoplay, {
+  delay: 3000,
+},
   // Navigation arrows
-  navigation: {
+  navigation, {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-});
 
-//responssive breackpoints
+    //responssive breackpoints
   breakpoints: {
     0: {
       slidesPerView: 1
-    }
+    },
     620: {
       slidesPerView: 2
-    }
+    },
     1024: {
       slidesPerView: 3
     }
-  
+  }
 });
-
 
 // Details button functionality
 document.querySelectorAll('.details-btn').forEach((button, index) => {
