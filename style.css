@@ -28,13 +28,13 @@ a {
 }
 
 nav {
-  display: inline-block;
+  display: flex;
   float: right;
   padding-right: 20px;
   list-style: none;
   margin-right: 20px;
   padding: 0;
-  display: inline;
+  
   margin-left: 20px;
 }
 
@@ -63,9 +63,6 @@ nav .icon {
     text-align: left;
   }
 
-  body {
-    max-width: fit-content;
-  }
 }
 
 .hero {
@@ -189,7 +186,7 @@ nav .icon {
 h1 {
   color: #636363;
   text-align: center;
-  font-size: xxx-large;
+  font-size: xx-large;
 }
 
 .label {
@@ -259,6 +256,7 @@ margin: 20px;}
 
 
 a {
+  
   margin-right: 20px; 
  
 }

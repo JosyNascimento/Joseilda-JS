@@ -6,49 +6,42 @@ function myFunction() {
   } else {
     x.className = "navbar";
   }
-} 
+}
 
-//biblioteca swiper js
-const swiper = new Swiper('.Swiper', {
-  slidesPerView: 4, // Espaço entre os slides
+// Biblioteca Swiper JS
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 4, // Número de slides visíveis
+  spaceBetween: 10, // Espaço entre os slides
   direction: 'horizontal',
   loop: true,
-  },
-
-  pagination, {
+  pagination: {
     el: '.swiper-pagination',
     clickable: true,
-   
-  }, 
-  
-  autoplay, {
-  delay: 3000,
-},
-  // Navigation arrows
-  navigation, {
+  },
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-
-    //responssive breackpoints
+  },
   breakpoints: {
     0: {
-      slidesPerView: 1
+      slidesPerView: 1,
     },
     620: {
-      slidesPerView: 2
+      slidesPerView: 2,
     },
     1024: {
-      slidesPerView: 3
-    }
-  }
+      slidesPerView: 4,
+    },
+  },
 });
 
-// Details button functionality
-document.querySelectorAll('.details-btn').forEach((button, index) => {
-    button.addEventListener('click', () => {
-      const slideCaption = slides[index].querySelector('.slide-caption').textContent;
-      alert(`Detalhes do imóvel: ${slideCaption}`);
-    });
+// Funcionalidade do botão Detalhes
+document.querySelectorAll('.detalhes').forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const slideCaption = document.querySelectorAll('.swiper-slide')[index].querySelector('h4').textContent;
+    alert(`Detalhes do imóvel: ${slideCaption}`);
   });
-
-
+});

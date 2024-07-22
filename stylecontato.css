@@ -12,8 +12,6 @@ body {
 
 }
 
-
-
   body::before {
     content: "";
     position: fixed;
@@ -33,7 +31,9 @@ body {
 }
 
 
+
 header {
+  height: 40px;
   background-color: #333;
   color: rgb(255, 255, 255);
   padding: 10px 0;
@@ -42,7 +42,7 @@ header {
 
 a {
   margin: 0;
-  display: inline-block;
+  display: flexbox;
   padding-left: 20px;
  font-size: 25px;
  color: #ffffff;
@@ -50,14 +50,13 @@ a {
 }
 
 nav {
-  display: inline-block;
   float: right;
-  padding-right: 20px;
+  padding-right: 10px;
   list-style: none;
-  margin-right: 20px;
-  padding: 0;
+  margin-right: 10px;
   display: inline;
-  margin-left: 20px;
+
+  
 }
 
 /* esconde o icones da nav em telas pequenos */
@@ -98,14 +97,15 @@ nav .icon {
 
 /*stile do form*/
 
+.containerContato {
+  margin-bottom: 100px;
+ 
+}
+
 *{
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
-
-body{
-  padding: 0;
-
   h1 {
     text-align: center;
     font-size: xxx-large;
@@ -119,9 +119,6 @@ body{
 
   }
 
-
-
-  
   form button {
     padding: 10px 20px;
     border: none;
@@ -140,10 +137,6 @@ body{
     color: white;
   }
   
-
-  
-  
-
   form button {
     margin-block: 10px;
   }
@@ -180,25 +173,11 @@ imput, select, textarea {
 
 }
 
-
-
-
-}
-@media (min-width: 768px) {
-  
-}
-
-
-
-
-  
-footer {  
+.footer {
   background-color: #333;
-  height: 30px; 
+  height: 30px;
   padding: 0px;
-
 }
-
 
 .footer-content {
   display: flex;
@@ -207,20 +186,16 @@ footer {
   background-color: #333;
 }
 
-
-.footer-content p { 
+.footer-content p {
   font-size: x-small;
-  display: flex; 
-  margin-top: 20px;  
+  display: flex;
+  margin-top: 20px;
   color: #ffffff;
   margin-left: 15px;
-  
-  
 }
 
-
- a {
-  margin-right: 20px; 
+a {
+  margin-right: 20px;
   padding-block: 20px;
 }
 
@@ -228,23 +203,20 @@ a:hover {
   color: #1cb850;
 }
 
-
 @media (max-width: 600px) {
- 
-  .footer-content p, .footer-content a {
-      margin-block: 40px;
+  .footer-content p,
+  .footer-content a {
+    margin-block: 40px;
   }
 
   .footer-content a {
-      align-self: center; /* Centraliza o link no footer */
-      font-size: medium;
+    align-self: center; /* Centraliza o link no footer */
+    font-size: medium;
   }
 
-  .footer-content p { 
+  .footer-content p {
     font-size: x-small;
-    display: flex; 
-    margin-top: 0px;  
-   
+    display: flex;
+    margin-top: 0px;
   }
-
 }

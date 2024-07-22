@@ -1,16 +1,15 @@
 /* sobre nós*/
 
 body {
-  background-image: url(img/fundo-de-ficcao.avif);
+  background-color: rgba(194, 237, 237, 0.406);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-container-principal {
-}
 header {
+  height: 40px;
   background-color: #333;
   color: rgb(255, 255, 255);
   padding: 10px 0;
@@ -18,7 +17,7 @@ header {
 
 a {
   margin: 0;
-  display: inline-block;
+  display: flexbox;
   padding-left: 20px;
   font-size: 25px;
   color: #ffffff;
@@ -91,30 +90,92 @@ nav .icon {
   margin: 0;
 }
 
-.container2 h2 {
-  text-align: center;
-  margin-top: 5px;
-  color: #f6f8fb;
-  font-family: "kalam", cursive;
-  text-decoration: double;
-}
-
-main {
+.main {
   text-align: center;
   margin-top: 10px;
-  color: #f6f8fb;
-  font-family: "kalam", cursive;
+  color: #010306;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: double;
-  font-size: x-large;
+  font-size: xx-large;
   padding: 20px;
 }
 
-.main ul,
-li {
-  display: flex;
-  padding: 20px;
-  padding-bottom: 20px;
+.pd-40-bg-gray h1 {
+  background-color: rgba(128, 128, 128, 0.194);
+  height: 70px;
+  color: rgb(255, 129, 3);
+  text-align: center;
+  font-size: xx-large;
+  padding-block: 30px;
 }
+
+.sobre-nós h3 {
+  line-height: 1.4;
+  text-indent: 20px;
+  font-size: xx-large;
+  color: rgb(116, 116, 222);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sobre-nós p {
+  font-size: x-large;
+  justify-content: center;
+  text-indent: 20px;
+  margin: 10px;
+  line-height: 1.4;
+}
+
+.sobre-nós h1 {
+  color: rgb(255, 129, 3);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.divisoria img {
+  display: flexbox;
+  padding: 10px;
+  margin-left: 100px;
+  align-items: center;
+  width: 500px;
+  border-radius: 20px;
+}
+
+
+.text-boxes {
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+
+.text-box1 {
+  color: rgb(255, 129, 3);
+  border: #124a43 solid 2px;
+  border-radius: 15px;
+  margin: 15px;
+  background-color: rgba(128, 128, 128, 0.194);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.text-box {
+  border: #124a43 solid 2px;
+  border-radius: 15px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  font-size: 40px;
+}
+
 
 footer {
   background-color: #333;
@@ -139,7 +200,8 @@ footer {
 
 a {
   margin-right: 20px;
-  padding-block: 20px;
+  padding-top: 20px;
+ 
 }
 
 a:hover {
