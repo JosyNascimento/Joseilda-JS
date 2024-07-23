@@ -1,9 +1,7 @@
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 header {
   height: 40px;
@@ -12,14 +10,13 @@ header {
   padding: 10px 0;
 }
 
-
 a {
   margin: 0;
   display: flexbox;
   padding-left: 20px;
- font-size: 25px;
- color: #ffffff;
- text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 nav {
@@ -40,14 +37,14 @@ nav .icon {
 
 /* mudar a cor dos links on hover */
 .navbar a:hover {
- 
-  color:  #2ab300;
+  color: #2ab300;
 }
-
 
 /* quando a tela é menor que  600 pixels wide, esconde todos os links, exceto o  início. */
 @media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
+  .navbar a:not(:first-child) {
+    display: none;
+  }
   .navbar a.icon {
     float: right;
     display: block;
@@ -56,7 +53,9 @@ nav .icon {
 
 /* O "responsive" class é adicionada a nav com JavaScriptquando usado clicks no icone. */
 @media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {
+    position: relative;
+  }
   .navbar.responsive a.icon {
     position: absolute;
     right: 0;
@@ -67,15 +66,13 @@ nav .icon {
     display: block;
     text-align: left;
   }
-} 
-
-footer {  
-  background-color: #333;
-  height: 30px; 
-  padding: 0px;
-
 }
 
+footer {
+  background-color: #333;
+  height: 30px;
+  padding: 0px;
+}
 
 .footer-content {
   display: flex;
@@ -84,20 +81,16 @@ footer {
   background-color: #333;
 }
 
-
-.footer-content p { 
+.footer-content p {
   font-size: x-small;
-  display: flex; 
-  margin-top: 20px;  
+  display: flex;
+  margin-top: 20px;
   color: #ffffff;
   margin-left: 15px;
-  
-  
 }
 
-
 a {
-  margin-right: 20px; 
+  margin-right: 20px;
   padding-block: 20px;
 }
 
@@ -105,36 +98,30 @@ a:hover {
   color: #1cb850;
 }
 
-
 @media (max-width: 600px) {
- 
-  .footer-content p, .footer-content a {
-      margin-block: 40px;
+  .footer-content p,
+  .footer-content a {
+    margin-block: 40px;
   }
 
   .footer-content a {
-      align-self: center; /* Centraliza o link no footer */
-      font-size: medium;
+    align-self: center; /* Centraliza o link no footer */
+    font-size: medium;
   }
 
-  .footer-content p { 
+  .footer-content p {
     font-size: x-small;
-    display: flex; 
-    margin-top: 0px;  
-   
+    display: flex;
+    margin-top: 0px;
   }
-
 }
 
-  .box-sand {
-
-    background: var(--sand);
-     padding: 0px 0px;
-     justify-content: center;
-     border-radius: 4px;
-     width: 100%;
-     background-color: #333;
-     align-items: right;
-     
-       
-       }
+.box-sand {
+  background: var(--sand);
+  padding: 0px 0px;
+  justify-content: center;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #333;
+  align-items: right;
+}

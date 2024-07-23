@@ -20,9 +20,9 @@ a {
   margin: 0;
   display: flexbox;
   padding-left: 20px;
- font-size: 25px;
- color: #ffffff;
- text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
 }
 nav {
   display: inline-block;
@@ -56,7 +56,21 @@ button:hover {
   border-radius: 5px;
 }
 
+.pd-40-bg-gray {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.194);
+  height: 70px;
+  padding-bottom: 30px;
+  margin-left: 0px;
+  color: rgb(255, 129, 3);
+}
 
+h2 {
+  display: flex;
+  text-align: center;
+  
+  font-size: xx-large;
+}
 
 /*card*/
 .box-product h1 {
@@ -89,29 +103,35 @@ span {
   z-index: 9;
 }
 
-.banner-home  h1 {
+.banner-home h1 {
   text-align: center;
   color: rgb(254, 254, 255);
   font-size: 3rem;
   margin: 30px;
-  
 }
 .banner-home form {
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding-bottom: 30px; 
-  
- 
+  padding-bottom: 30px;
 }
+
+.divisoria img {
+  display: flexbox;
+  padding: 10px;
+  margin-left: 100px;
+  align-items: center;
+  width: 500px;
+  border-radius: 20px;
+}
+
 
 @media screen and (min-width: 600px) {
   .container {
     max-width: 1374px;
   }
 }
-
 
 section {
   display: flex;
@@ -151,7 +171,7 @@ section {
   padding-block: 10px;
 }
 
-.button{
+.button {
   display: flex;
   padding: 10px;
   font-size: 15px;
@@ -159,11 +179,10 @@ section {
   border: 1px solid #e3e9e6;
   align-items: center;
   text-align: center;
-
 }
 
- /*carousel*/
- .container swiper {
+/*carousel*/
+.container swiper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -234,7 +253,6 @@ section {
   outline: none;
 }
 
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -280,7 +298,6 @@ section {
   margin: 10px;
 }
 
-
 .text-box {
   border: #124a43 solid 2px;
   background-color: #28262648;
@@ -297,31 +314,26 @@ section {
 
 @media (min-width: 768px) {
 }
-
 footer {
   background-color: #333;
-  height: 30px;
-  padding: 0px;
+  color: white;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between; /* Espaço entre os elementos */
   align-items: center; /* Centraliza verticalmente os elementos */
-  background-color: #333;
 }
 
 .footer-content p {
   font-size: x-small;
   display: flex;
-  margin-top: 20px;
-  color: #ffffff;
-  margin-left: 15px;
+  margin-top: 30px;
+  margin: 20px;
 }
 
 a {
   margin-right: 20px;
-  padding-block: 20px;
 }
 
 a:hover {
@@ -331,7 +343,7 @@ a:hover {
 @media (max-width: 600px) {
   .footer-content p,
   .footer-content a {
-    margin-block: 40px;
+    margin-block: 1px;
   }
 
   .footer-content a {
@@ -344,14 +356,4 @@ a:hover {
     display: flex;
     margin-top: 0px;
   }
-}
-
-.box-sand {
-  background: var(--sand);
-  padding: 0px 0px;
-  justify-content: center;
-  border-radius: 4px;
-  width: 100%;
-  background-color: #333;
-  align-items: right;
 }

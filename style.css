@@ -80,16 +80,31 @@ nav .icon {
   margin: 0;
 }
 
-.hero form {
-  margin-top: 20px;
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  align-items: center;
+  text-align: center;
 }
+
+button:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
 
 .hero input {
   padding: 10px;
   font-size: 1em;
 }
 
+
+
+
 .hero button {
+  border-radius: 5px;
   padding: 10px 20px;
   font-size: 1em;
   background-color: #007bff;
@@ -108,9 +123,15 @@ nav .icon {
   background-color: #f8f8f8;
 }
 
+
 .properties h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-size: xx-large;
+  color: #007bff;
+  text-shadow: #050505;
+  text-overflow: ellipsis;
 }
 
 .property-card {
@@ -119,6 +140,7 @@ nav .icon {
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
+ 
 }
 
 .property-card img {
@@ -128,7 +150,8 @@ nav .icon {
 }
 
 .property-card .details {
-  padding: 15px;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .property-card h3 {
@@ -158,10 +181,17 @@ nav .icon {
   align-items: right;
 }
 
-* {
+
+.box-sand p, h4{
   box-sizing: border-box;
+  text-indent: 20px;
+  font-size: larger;
+  margin: 20px; 
 }
 
+.box-sand  h4{
+  text-align: center;
+}
 .box-img {
   max-width: 200px;
   max-height: 150px;
@@ -181,6 +211,7 @@ nav .icon {
 }
 
 .text-center p {
+  padding-block: 30px;
   color: #121212;
 }
 h1 {
@@ -232,12 +263,8 @@ button:hover {
 }
 
 footer {
-  
   background-color: #333;
-  height: 30px;
   color: white; 
-  
-
 }
 
 
