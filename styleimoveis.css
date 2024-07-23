@@ -62,18 +62,29 @@ button:hover {
   height: 70px;
   padding-bottom: 30px;
   margin-left: 0px;
-  color: rgb(255, 129, 3);
+  
 }
 
 h2 {
   display: flex;
   text-align: center;
-  
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 220px;
   font-size: xx-large;
+  color: rgb(255, 129, 3);
 }
 
 /*card*/
-.box-product h1 {
+
+.box-product {
+  height: 965px;
+
+
+}
+
+
+.box-product    h1 {
   background-color: #333;
   border-radius: 5px;
   color: #fff;
@@ -126,6 +137,9 @@ span {
   border-radius: 20px;
 }
 
+.card-list{
+padding: 32px;
+}
 
 @media screen and (min-width: 600px) {
   .container {
@@ -197,18 +211,8 @@ section {
   display: flex;
   max-width: 1200px;
   justify-content: center;
-  margin: 0 70px 55px;
 }
 
-.container swiper {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  width: 300px;
-  margin: 0 10px;
-}
 
 .img-product {
   max-width: 100%;
@@ -312,6 +316,19 @@ section {
   font-size: 40px;
 }
 
+
+.text-box1 {
+  border: #124a43 solid 2px;
+  background-color: #28262648;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  font-size: 40px;
+}
 @media (min-width: 768px) {
 }
 footer {
