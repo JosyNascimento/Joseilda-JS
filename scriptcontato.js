@@ -9,8 +9,6 @@ function myFunction() {
   } 
 
 const form = document. querySelector("#form");
-const emailInput = document.querySelector("#password");
-const passwordInput = document.querySelector("#password");
 const imoveisselect = document.querySelector("#imoveis");
 const messageTextarea = document.querySelector("#message");
 
