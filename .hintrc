@@ -31,5 +31,18 @@
         "html-has-lang": "off"
       }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 127",
+    "not firefox <= 128",
+    "not and_chr <= 126",
+    "not chrome <= 126",
+    "not edge <= 126",
+    "not ios_saf <= 17.5",
+    "not opera <= 111",
+    "not safari <= 17.5",
+    "not samsung <= 25"
+  ]
 }
