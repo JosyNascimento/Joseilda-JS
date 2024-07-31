@@ -1,6 +1,11 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+
+body {
+  align-items: center;
+  justify-content: center;
+  font-family: Ubuntu, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -18,7 +23,6 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
-
 nav {
   display: inline-block;
   float: right;
@@ -26,8 +30,134 @@ nav {
   list-style: none;
   margin-right: 20px;
   padding: 0;
-  display: inline;
   margin-left: 20px;
+}
+
+
+.banner-home{
+  height: 300px;
+}
+
+.banner-home h1{
+  text-align: center;
+  padding-block: 100px;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pd-40-bg-gray {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.194);
+  height: 70px;
+  padding-bottom: 30px;
+  margin-left: 0px;
+  
+}
+
+h2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 220px;
+  font-size: xx-large;
+  color: rgb(255, 129, 3);
+}
+/*imagens*/
+
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imovel-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imovel-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.imovel-card h2 {
+  margin-top: 0;
+}
+
+.imovel-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.imovel-card ul li {
+  background: #f7f7f7;
+  margin: 4px 0;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #000;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+}
+
+.card-swiper-container {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 16px;
+}
+
+.card-swiper-container .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-swiper-button-next, .card-swiper-button-prev {
+  color: #000;
+}
+
+.card-swiper-pagination-bullet {
+  background: #000;
+}
+
+.detalhes-imovel .container {
+  text-align: center;
+}
+
+.detalhes-imovel h2 {
+  margin-top: 0;
+}
+
+.detalhes-imovel p {
+  font-size: 1.2em;
+}
+
+.detalhes-imovel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detalhes-imovel ul li {
+  background: #f7f7f7;
+  margin: 4px 0;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 /* esconde o icones da nav em telas pequenos */
@@ -68,30 +198,28 @@ nav .icon {
   }
 }
 
+
+
 footer {
   background-color: #333;
-  height: 30px;
-  padding: 0px;
+  color: white;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between; /* Espaço entre os elementos */
   align-items: center; /* Centraliza verticalmente os elementos */
-  background-color: #333;
 }
 
 .footer-content p {
   font-size: x-small;
   display: flex;
-  margin-top: 20px;
-  color: #ffffff;
-  margin-left: 15px;
+  margin-top: 30px;
+  margin: 20px;
 }
 
 a {
   margin-right: 20px;
-  padding-block: 20px;
 }
 
 a:hover {
@@ -101,7 +229,7 @@ a:hover {
 @media (max-width: 600px) {
   .footer-content p,
   .footer-content a {
-    margin-block: 40px;
+    margin-block: 1px;
   }
 
   .footer-content a {
@@ -116,12 +244,3 @@ a:hover {
   }
 }
 
-.box-sand {
-  background: var(--sand);
-  padding: 0px 0px;
-  justify-content: center;
-  border-radius: 4px;
-  width: 100%;
-  background-color: #333;
-  align-items: right;
-}

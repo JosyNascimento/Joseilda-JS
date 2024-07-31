@@ -2,59 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mirage é uma empresa focada em promover a melhor experiência da sua vida 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mirage é uma empresa focada em promover a melhor experiência da sua vida 
          morando em uma casa dos seus sonhos.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="keywords" content="Mirage, casa dos sonhos, morar em São Paulo, 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="keywords" content="Mirage, casa dos sonhos, morar em São Paulo, 
     morar no Rio de Janeiro, casa de luxo">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="detalhes.css">
-    <title>Mirage Living Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styledetalhes.css">
+  <title>Detalhes do imóvel</title>
 </head>
 
 <body>
   <!-- Header Section -->
   <div class="container-principal">
-        
-    <header>    
-        <a href="./imoveis.html">Mirage</a>  
-            <nav class="navbar" id="menu-icon">
-                           
-                <a href="./index.html">Início</a>
-                <a href="./imoveis.html">Imóveis</a>
-                <a href="./quemsomos.html">Quem Somos</a>
-                <a href="./contato.html">Contato</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                    </a>
-           
-        </nav>
+    <header>
+      <a href="./index.html">Mirage</a>
+      <nav class="navbar" id="menu-icon">
+        <a href="./home.html">Home</a>
+        <a href="./imoveis.html">Imóveis</a>
+        <a href="./quemsomos.html">Quem Somos</a>
+        <a href="./contato.html">Contato</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      </nav>
     </header>
 
-</head>
+    <section class="banner-home" style="background-image: url('img/bannerimoveis.jpg')"></section>
 
-<div class="details-container">
-    <h1>Detalhes do Imóvel</h1>
-    <div class="details">
-      <img src="img/apartamento 1/foto-11.jpg" alt="Imóvel 1">
-      <h2>Imóvel 1</h2>
-      <p>Descrição detalhada do imóvel 1.</p>
-      <a href="./imoveis.html">Voltar</a>
+    <main class="conteúdo-principal">
+      <section class="pd-40-bg-gray">
+        <h2 class="text-center"></h2>
+      </section>
+      </head>
+
+      
+
+      <section class="detalhes-imovel">
+        <div class="container">
+          <h2 id="nomeImovel">Nome do Imóvel</h2>
+          <div class="swiper-container" id="imovelFotos">
+            <div class="swiper-wrapper" id="swiperFotos">
+              <!-- Imagens do imóvel serão inseridas aqui pelo JavaScript -->
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="imovel-detalhes">
+            <p id="localizacaoImovel">Localização: </p>
+            <p id="descricaoImovel">Descrição: </p>
+            <ul id="comodidadesImovel">
+              <!-- Comodidades serão inseridas aqui pelo JavaScript -->
+            </ul>
+          </div>
+        </div>
+      </section>
+   
+
+
+
+
+
+      <footer class="footer-content">
+        <p>&copy; 2024 Mirage living Home. Todos os direitos reservados.</p>
+        <a href="#">&#9650;Ir ao topo</a>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./scriptdeta.js"></script>
     </div>
-  </div>
-
-
-
-
-
-  <footer class="footer-content">
-    <p>&copy; 2024 Mirage living Home. Todos os direitos reservados.</p>
-    <a href="#">&#9650;Ir ao topo</a>
-  </footer>
-    
 </body>
 </html>
+
+
+
+
+ 
