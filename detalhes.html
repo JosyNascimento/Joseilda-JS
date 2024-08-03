@@ -12,7 +12,6 @@
     morar no Rio de Janeiro, casa de luxo">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="styledetalhes.css">
   <title>Detalhes do imóvel</title>
 </head>
@@ -31,7 +30,7 @@
       </nav>
     </header>
 
-    <section class="banner-home" style="background-image: url('img/bannerimoveis.jpg')"></section>
+    <section class="banner-home" style="background-image: url('img/mar e sol/apto.png')"></section>
 
     <main class="conteúdo-principal">
       <section class="pd-40-bg-gray">
@@ -39,41 +38,75 @@
       </section>
       </head>
 
+
+      <div class="text-boxes">
+        <div class="text-box">RESIDENCIAL MAR E SOL</div>
+      </div>
+     
+
+<!--slides para carregar as fotos-->
+<div class="slider">
+  <div class="slides">
+    <input type="radio" name="radio-btn" id="radio1" checked>
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <input type="radio" name="radio-btn" id="radio5">
+    <input type="radio" name="radio-btn" id="radio6">
+    <input type="radio" name="radio-btn" id="radio7">
+
+    <div class="slide first">
+      <img src="img/mar e sol/apto.png" alt="apartamento1">
+    </div>
+    <div class="slide">
+      <img src="img/mar e sol/churrasqueira01.png" alt="ap2">
+    </div>
+    <div class="slide">
+      <img src="img/mar e sol/coworking.png" alt="apato3">
+    </div>
+    <div class="slide">
+      <img src="img/mar e sol/foto-6.jpg" alt="4">
+    </div>
+    <div class="slide">
+      <img src="img/mar e sol/foto-11.jpg" alt="5">
+    </div>
+    <div class="slide">
+      <img src="img/mar e sol/foto-8.jpg" alt="6">
+    </div>
+    <div class="slide">
+      <img src="img/chaves.jpg" alt="7">
+    </div>
+  </div>
+
+  <div class="manual-navigation">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+    <label for="radio5" class="manual-btn"></label>
+    <label for="radio6" class="manual-btn"></label>
+    <label for="radio7" class="manual-btn"></label>
+  </div>
+</div>
+  <div class="text-boxes">
+    <div class="text-box">Conheça seu novo apartamento!</div>
+    
+  <p class="descricaoImovel"> O Residencial Mar e Sol, é onde o sonho de morar em um apê só seu encontra a oportunidade perfeita. Aqui, tranquilidade, conforto, bem-estar e segurança se misturam para criar uma nova onda de qualidade de vida para você e sua família.
+
+    São apês de 1 e 2 quartos com opção de garden, área de lazer com playground,a academia, bicicletário e churrasqueira.
+    
+    Mais um projeto da Mirage que faz parte de um grande complexo residencial que vem transformando vidas. </p>
+      </div>
+
       
-
-      <section class="detalhes-imovel">
-        <div class="container">
-          <h2 id="nomeImovel">Nome do Imóvel</h2>
-          <div class="swiper-container" id="imovelFotos">
-            <div class="swiper-wrapper" id="swiperFotos">
-              <!-- Imagens do imóvel serão inseridas aqui pelo JavaScript -->
-            </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="imovel-detalhes">
-            <p id="localizacaoImovel">Localização: </p>
-            <p id="descricaoImovel">Descrição: </p>
-            <ul id="comodidadesImovel">
-              <!-- Comodidades serão inseridas aqui pelo JavaScript -->
-            </ul>
-          </div>
-        </div>
-      </section>
-   
-
-
-
+  
+</main>
 
 
       <footer class="footer-content">
         <p>&copy; 2024 Mirage living Home. Todos os direitos reservados.</p>
         <a href="#">&#9650;Ir ao topo</a>
       </footer>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="./scriptdeta.js"></script>
     </div>
 </body>

@@ -216,14 +216,13 @@ document
     calcularFinanciamento();
   });
 
-//botão limpar formulário
-function limparFormulario() {
+
   // Obtém o formulário pelo ID
   var formulario = document.getElementById("simulador-form");
 
   // Limpa todos os campos do formulário
   formulario.reset();
-}
+
 
 //  fechar o resultado ao clicar no botão "Fechar"
 const fecharResultadoBtn = document.getElementById("fecharResultado");

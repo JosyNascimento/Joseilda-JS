@@ -1,16 +1,22 @@
 /*home*/
 body {
+  
   background-color: #007bff3e;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .container-principal {
-  max-width: 1000px;
+  max-width: 1500px;
   display: inline;
-}
+    width: 100vh;
+    width: 100vw;
+    margin-top: -50px;
+    overflow: hidden;
+  }
+
 
 header {
   background-color: #333;
@@ -48,19 +54,28 @@ nav .icon {
   color: #2ab300;
 }
 
-/* O "responsive" class é adicionada a nav com JavaScriptquando usado clicks no icone. */
+/* O "responsive" class é adicionada a nav com JavaScript quando usado clicks no icone. */
 @media screen and (max-width: 600px) {
   .navbar.responsive {
-    position: relative;
+    position: absolute;
   }
   .navbar.responsive a.icon {
     right: 0;
     top: 0;
   }
-  .navbar.responsive a {
+  .navbar a {
     float: none;
-    display: block;
-    text-align: left;
+    display: flex;
+    text-align: right;
+    text-decoration-color: #121212;
+  }
+
+  .hero {
+    background-image: url(img/hero-image.jpg);
+    height: 10px;
+    width: 282px;
+    color: white;
+   
   }
 
 }
@@ -323,20 +338,30 @@ a:hover {
    
   }
 
+  .box-img{
+    width: 5px;
+  }
+  .box-img img{
+    width: 250px;
+    height: 500px;
+  }
 
 
   .box-sand {
-
-    background: var(--sand);
-     padding: 0px 0px;
-     justify-content: center;
-     border-radius: 4px;
-     width: 100%;
-     background-color: #333;
-     align-items: right;
-     
-       
+ 
+     width: 50%; 
        }
+
+       .box-sand h4, p{
+ 
+       font-size: 15px;
+          
+          }  
+          .box-sand p{
+ 
+            font-size: 12px;
+               
+               }
 }
 
 
