@@ -43,7 +43,16 @@ nav {
 
 }
 
+.baner-detalhes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 220px;
+  font-size: xx-large;
+  color: rgb(69, 237, 122);
 
+}
 
 
 /*pd para criar uma divisão entre o banner e os demais itens*/
@@ -149,25 +158,6 @@ nav .icon {
   height: 100%;
 }
 
-/* Automatic Navigation */
-.navigation-auto {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
- 
-}
-
-.navigation-auto div {
-  border: 2px solid #fff;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child) {
-  margin-right: 40px;
-}
 
 #radio1:checked ~ .first {
   margin-left: 0;
