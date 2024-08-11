@@ -10,6 +10,15 @@ body {
    
   }
 
+
+  .container-principal {
+    max-width: 1500px;
+    display: inline;
+      width: 100vh;
+      width: 100vw;
+      margin-top: -50px;
+      overflow: hidden;
+    }
 /*style header*/
 
 header {
