@@ -61,10 +61,10 @@ nav .icon {
 
   /*style do hero*/
   .hero {
-    background-image: url("img/hero-image.jpg");
+    background-image: url(img/hero-image.jpg);
     background-size: cover; /* Faz com que a imagem cubra toda a área do body */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
-    background-position: center center; /* Centraliza a imagem no body */
+    background-position: center; /* Centraliza a imagem no body */
     height: 40vh;
     color: white;
     display: flex;
