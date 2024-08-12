@@ -175,7 +175,7 @@ textarea {
   font-size: medium;
 }
 
-a:hover {
+.footer-content a:hover {
   color: #1cb850;
 }
 
@@ -276,13 +276,5 @@ header > a {
     margin-left: 0rem;
   }
 
-  .footer-content a {
-    text-decoration: none;
-    margin-top: 0rem;
-    color: #ffffff;
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
-    padding-block: 0rem;
-    font-size: 0.8rem;
-  }
+
 }
