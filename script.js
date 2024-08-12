@@ -1,9 +1,9 @@
 // script.js
 /* nav"responsive" class para a nav */
-function myFunction() {
-  var x = document.getElementById("menu-icon");
+function toggleMenu() {
+  var x = document.getElementById("navbar");
   if (x.className === "navbar") {
-    x.className += "responsive";
+    x.className += " responsive";
   } else {
     x.className = "navbar";
   }
@@ -38,11 +38,11 @@ const properties = [
   },
   {
     id: 3,
-    title: "Chácara espaçosa",
-    location: "Araruama, RJ",
+    title: "Casa espaçosa",
+    location: "Rio de Janeiro, RJ",
     price: "R$ 650.000,00",
     image:
-      "https://imgs.search.brave.com/l5mL-9DB-KvZsaNwLdmHVQrGE_GUQrytNZ1ePZY42PE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/aXByb2pldGVpLmNv/bS5ici91cGxvYWQv/MTMyNy84MjN4NDYz/LW1pbmlhdHVyYS5q/cGc",
+      "img/mar e sol/foto-8.jpg",
   },
 
   {

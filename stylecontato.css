@@ -1,9 +1,6 @@
 body {
   display: grid;
   background-color: #b6b2b2;
-  background-size: cover; /* Faz com que a imagem cubra toda a área do body */
-  background-repeat: no-repeat; /* Evita a repetição da imagem */
-  background-position: center center; /* Centraliza a imagem no body */
   height: 100vh; /* Garante que o body ocupe 100% da altura da viewport */
   margin: 0; /* Remove margens */
   padding: 0;
@@ -57,6 +54,9 @@ nav .icon {
   /*style do hero*/
   .hero {
     background-image: url("img/hero3.jpg");
+    background-size: cover; /* Faz com que a imagem cubra toda a área do body */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center center; /* Centraliza a imagem no body */
     height: 40vh;
     color: white;
     display: flex;

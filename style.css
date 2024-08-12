@@ -1,49 +1,57 @@
 /*home*/
 body {
-  
-  background-color: #007bff3e;
+  background-color: #d8e2ed3e;
   font-family: Arial, sans-serif;
   margin: 0;
-    padding: 0;
-    margin: 0 auto;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .container-principal {
-  max-width: 1500px;
+  max-width: 50px;
   display: inline;
-    width: 100vh;
-    width: 100vw;
-    margin-top: -50px;
-    overflow: hidden;
-  }
-
+}
 
 header {
+  display: flex;
   background-color: #333;
-  color: rgb(255, 255, 255);
-  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
 }
 
-a {
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+header a {
   margin: 0;
-  display: inline-block;
-  padding-left: 20px;
-  font-size: 25px;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
   color: #ffffff;
   text-decoration: none;
+  margin-right: 2rem; /* Espaço entre os links */
 }
 
-nav {
+/* Estilo da navbar */
+.navbar {
   display: flex;
-  float: right;
-  padding-right: 20px;
-  list-style: none;
-  margin-right: 20px;
-  padding: 0;
-  
-  margin-left: 20px;
+  flex-direction: row; /* Ajusta a quebra de linha em dispositivos menores */
+  margin-right: 1rem;
 }
 
+.navbar a {
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.container2 h2 {
+  font-size: 3rem;
+}
 /* esconde o icones da nav em telas pequenos */
 nav .icon {
   display: none;
@@ -54,37 +62,12 @@ nav .icon {
   color: #2ab300;
 }
 
-
-
-/* O "responsive" class é adicionada a nav com JavaScript quando usado clicks no icone. */
-@media screen and (max-width: 600px) {
-  .navbar.responsive {
-    position: absolute;
-  }
-  .navbar.responsive a.icon {
-    right: 0;
-    top: 0;
-  }
-  .navbar a {
-    float: none;
-    display: flex;
-    text-align: right;
-    text-decoration-color: #121212;
-  }
-
-  .hero {
-    background-image: url(img/hero-image.jpg);
-    height: 10px;
-    width: 282px;
-    color: white;
-   
-  }
-
-}
-
 .hero {
   background-image: url(img/hero-image.jpg);
-  height: 400px;
+  background-size: cover; /* Faz com que a imagem cubra toda a área do body */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-position: center center; /* Centraliza a imagem no body */
+  height: 40vh;
   color: white;
   display: flex;
   justify-content: center;
@@ -92,48 +75,33 @@ nav .icon {
   text-align: center;
 }
 
-.hero h2 {
-  font-size: 3em;
-  margin: 0;
-  padding:
-40px;}
-
-
-select, button {
-  width: 150px;
-  height: 50px;
-  padding: 10px;
-  font-size: 16px;
+select {
+  width: 8vw;
+  height: 4vh;
+  font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #ccc;
   align-items: center;
   text-align: center;
 }
 
-
-
-
-button:hover {
-  background-color: #0056b3;
-  border-radius: 5px;
+.button a {
+  color: whitesmoke;
+  text-decoration: none;
 }
-
-
 
 .hero input {
-  padding: 10px;
-  font-size: 1em;
+  padding: 2rem;
+  font-size: 1rem;
 }
 
-
-
-
 .hero button {
+  text-decoration: none;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 1em;
   background-color: #007bff;
-  color: white;
+  color: #ddd;
   border: none;
   cursor: pointer;
 }
@@ -142,20 +110,28 @@ button:hover {
   background-color: #2ab300;
 }
 
+.container2 h2 {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+}
+
+container2
+
 /*cards com os objetos*/
 .properties {
-  padding: 20px 0;
+  padding: 2rem 0;
   background-color: #f8f8f8;
 }
 
+.container-form h2 {
+  font-size: 2rem;
+}
 
 .properties h2 {
   text-align: center;
-  margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif ;
-  font-size: xx-large;
+  margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
   color: #007bff;
-  text-shadow: #050505;
   text-overflow: ellipsis;
 }
 
@@ -165,7 +141,6 @@ button:hover {
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
- 
 }
 
 .property-card img {
@@ -198,61 +173,69 @@ button:hover {
 }
 
 .box-sand {
+  display: block;
+  max-width: 100%;
   background: var(--sand);
-  padding: 60px 45px;
   border-radius: 4px;
-  width: 40%;
+  width: 30vw;
+  height: 30vh;
   background-color: #333;
-  align-items: right;
 }
 
-
-.box-sand p, h4{
-  box-sizing: border-box;
-  text-indent: 20px;
-  font-size: larger;
-  margin: 20px; 
-}
-
-.box-sand  h4{
+.box-sand h4 {
   text-align: center;
+  font-size: 1.5rem;
 }
+
+.box-sand p {
+  text-indent: 1rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin: 1rem;
+  justify-content: center;
+}
+
 .box-img {
   max-width: 200px;
   max-height: 150px;
+}
 
-  margin-block: 15px;
+.box-img img {
+  display: block;
+  width: 58vw;
+  max-width: 58vw;
+  height: auto;
 }
 
 .pd-60 {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20rem;
+  padding-bottom: 2rem;
   background-color: rgba(128, 128, 128, 0.527);
+  height: auto;
 }
 
-.text-center {
-  text-align: center !important;
-  padding-block: 30px;
-}
-
-.text-center p {
-  padding-block: 30px;
+.pd-60 p {
+  font-size: 3rem;
   color: #121212;
+  text-align: center;
+  justify-content: center;
 }
-h1 {
+
+.pd-60 h1 {
+  padding: 4rem;
   color: #636363;
   text-align: center;
-  font-size: xx-large;
 }
 
-.label {
-  align-items: center;
+.container-form h2 {
+  text-align: center;
 }
+
 /*simulador*/
 
 .container {
   max-width: 1000px;
-  margin: 40px auto;
+  margin: 50px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -260,9 +243,20 @@ h1 {
   box-shadow: 0 0 10px rgba(228, 228, 232, 0.217);
 }
 
+.container h1 {
+  font-size: 1.5rem;
+}
+.container p {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
 .calcular-btn {
-  padding: 10px 20px;
-  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  height: 3.5vh;
+  padding: 0.5rem;
+  font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
   align-items: center;
@@ -276,7 +270,7 @@ button:hover {
   background-color: #333;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 20px;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
@@ -287,108 +281,188 @@ button:hover {
   background-color: #555;
 }
 
+/*style footer*/
+
 footer {
+  display: flex;
   background-color: #333;
-  color: white; 
+  color: white;
+  width: 100vw;
+  height: 2vh;
+  padding-top: 0.9rem;
 }
 
-
 .footer-content {
-  display: flex;
   justify-content: space-between; /* Espaço entre os elementos */
   align-items: center; /* Centraliza verticalmente os elementos */
 }
 
+.footer-content p {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  margin: 2rem;
+}
 
-.footer-content p { 
-  font-size: x-small;
-  display: flex; 
-  margin-top: 30px; 
-margin: 20px;}
-
-
-a {
-  
-  margin-right: 20px; 
- 
+.footer-content a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
 }
 
 a:hover {
   color: #1cb850;
 }
 
+/*RESPONSIVIDADE*/
+/* Estilos para telas menores ou iguais a 768px */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+  }
 
-@media (max-width: 600px) {
- 
-  .footer-content p, .footer-content a {
-      margin-block: 1px;
+  header > a {
+    font-size: 1rem;
+   
+  }
+  .navbar {
+    display: none; /* Esconde o menu inicialmente */
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Define a largura do menu */
+    background-color: #333; /* Cor de fundo do menu */
+  }
+
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar a.icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    color: white;
+    font-size: 24px;
+  }
+
+  /* Exibe o menu quando o ícone é clicado */
+  .navbar.responsive {
+    display: flex;
+  }
+
+  .hero {
+    background-image: url("img/hero-image.jpg");
+    width: 100vw;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+  }
+  .container2 h2 {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+
+  select{
+    width: 20vw;
+    height: 2rem;
+  }
+
+  button{
+    padding: 0.2rem;
+    margin: 0.2rem;
+    width: 25vw;
+    height: 2rem;
+    text-align: center;
+    align-items: center;
+
+  }
+  .box-sand h4 {
+    font-size: 0.5rem;
+    padding: 0rem;
+    margin: 0.2rem;
+  }
+  .box-sand p {
+    font-size: 0.5rem;
+    margin: 0.2rem;
+  }
+
+  .box-sand {
+    width: 55vw;
+    height: 35vh;
+  }
+  .box-img {
+    width: 100%;
+    height: 85vh;
+  }
+
+  .box-img img {
+    width: 82vw;
+    height: 30vh;
+  }
+
+  .d-flex {
+    width: 55vw;
+    height: 65vh;
+  }
+  .calcular-btn {
+    padding: 0.2rem;
+    margin: 0.2rem;
+    height: 4vh;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .fechar-btn {
+    padding: 0.2rem;
+    margin: 0.2rem;
+    height: 4vh;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .pd-60 {
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /*stile footer*/
+  .footer-content {
+    width: 100vw;
+    height: 2vh;
   }
 
   .footer-content a {
-      align-self: center; /* Centraliza o link no footer */
-      font-size: medium;
+    font-size: 1rem;
   }
 
-  .footer-content p { 
-    font-size: x-small;
-    display: flex; 
-    margin-top: 0px;  
-   
+  .footer-content p {
+    font-size: 0.3rem;
+    margin: 0;
   }
-
-  .box-img{
-    width: 5px;
-  }
-  .box-img img{
-    width: 250px;
-    height: 500px;
-  }
-
-
-  .box-sand {
- 
-     width: 50%; 
-       }
-
-       .box-sand h4, p{
- 
-       font-size: 15px;
-          
-          }  
-          .box-sand p{
- 
-            font-size: 12px;
-               
-               }
 }
 
-
-
 @media (min-width: 768px) {
-  .container-principal {
-    max-width: 50px;
-    display: inline;
-  }
-
-  header .navbar a {
-    display: none;
-  }
-
-  header .navbar a.icon {
-    display: block;
-  }
-
-  header.responsive .navbar a {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid #444;
-  }
-
-  header.responsive .navbar {
+  .header.responsive .navbar {
     flex-direction: column;
+    align-items: flex-end;
   }
 
+  /* Estilo dos cards */
   .property-card {
     display: flex;
   }
@@ -401,4 +475,7 @@ a:hover {
   .property-card .details {
     width: 50%;
   }
+  .properties h2 {
+    font-size: 1rem;
   }
+}
