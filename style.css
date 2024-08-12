@@ -258,6 +258,15 @@ select {
   cursor: pointer;
 }
 
+.fechar-btn:hover {
+  opacity: 0.8;
+  color:red
+
+}
+
+.calcular-btn:hover {
+  opacity: 0.8;
+}
 .fechar-btn {
   background-color: #333;
   color: #fff;
@@ -326,6 +335,10 @@ h1 {
   padding-block: 1rem;
   align-self: center; /* Centraliza o link no footer */
   
+}
+
+.footer-content a:hover {
+  color: #1cb850;
 }
 
 /* Estilos para Mobile */

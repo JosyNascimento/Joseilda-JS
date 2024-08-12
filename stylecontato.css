@@ -164,7 +164,7 @@ textarea {
 
 .footer-content a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   margin-top: 1rem;
   color: #ffffff;
@@ -172,7 +172,7 @@ textarea {
   margin-right: 1rem;
   padding-block: 1rem;
   align-self: center; /* Centraliza o link no footer */
-  font-size: medium;
+  
 }
 
 .footer-content a:hover {
@@ -180,7 +180,7 @@ textarea {
 }
 
 .footer-content p {
-  font-size: x-small;
+  font-size: 0.5rem;
   display: flex;
   margin-top: 0rem;
 }
