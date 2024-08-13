@@ -1,101 +1,47 @@
-
+/*home*/
 body {
- 
-  font-family: Arial, sans-serif !important;
+  background-color: #e1e6eb3e;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
-    display: flex;
-    background-color: #007bff3e;
-   
-  }
+  box-sizing: border-box;
+}
 
-
-  .container-principal {
-    max-width: 1500px;
-    display: inline;
-      width: 100vh;
-      width: 100vw;
-      margin-top: -50px;
-      overflow: hidden;
-    }
-/*style header*/
+.container-principal {
+  max-width: 100vw;
+  display: inline;
+}
 
 header {
-  height: 40px;
+  display: flex;
   background-color: #333;
-  color: rgb(255, 255, 255);
-  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid #ccc;
 }
 
-a {
+header a {
   margin: 0;
-  display: flexbox;
-  padding-left: 20px;
-  font-size: 25px;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
   color: #ffffff;
   text-decoration: none;
-}
-nav {
-  display: inline-block;
-  float: right;
-  padding-right: 20px;
-  list-style: none;
-  margin-right: 20px;
-  padding: 0;
-  margin-left: 20px;
+  margin-right: 2rem; /* Espaço entre os links */
 }
 
-/*style banner*/
-.banner-home{
-  height: 300px;
-
+/* Estilo do logo */
+header > a {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.baner-detalhes {
+/* Estilo da navbar */
+.navbar {
   display: flex;
-  text-align: center;
-  justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 220px;
-  font-size: xx-large;
-  color: rgb(69, 237, 122);
-
+  flex-wrap: wrap; /* Ajusta a quebra de linha em dispositivos menores */
+  margin-right: 1rem;
 }
-
-
-/*pd para criar uma divisão entre o banner e os demais itens*/
-.pd-40-bg-gray {
-  display: flex;
-  background-color: rgba(128, 128, 128, 0.194);
-  height: 70px;
-  padding-bottom: 30px;
-  margin-left: 0px;
-  
-}
-
-
-/*título*/
-h2 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 220px;
-  font-size: xx-large;
-  color: rgb(255, 129, 3);
-}
-
-
-/*imagens*/
-
-.conteúdo-principal{
-  width: 100vh;
-  width: 100vw;
-  margin-top: -50px;
-  overflow: hidden;
-}
-
 
 /* esconde o icones da nav em telas pequenos */
 nav .icon {
@@ -107,35 +53,68 @@ nav .icon {
   color: #2ab300;
 }
 
-/* quando a tela é menor que  600 pixels wide, esconde todos os links, exceto o  início. */
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
+/*style banner*/
+.banner-home {
+  width: 100vw;
+  height: 30vh;
 }
 
-/* O "responsive" class é adicionada a nav com JavaScriptquando usado clicks no icone. */
-@media screen and (max-width: 600px) {
-  .navbar.responsive {
-    position: relative;
-  }
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-   
-  }
+.baner-detalhes {
+  text-align: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20rem;
+  padding-bottom: 3rem;
+  margin-bottom: 6rem;
+  font-size: 3rem;
+  color: rgb(69, 237, 122);
 }
 
+/*pd para criar uma divisão entre o banner e os demais itens*/
+.pd-40-bg-gray {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.194);
+  height: 2rem;
+  padding-bottom: 3rem;
+  margin-left: 0rem;
+}
+
+/*imagens*/
+
+.conteúdo-principal {
+  width: 100vh;
+  width: 100vw;
+  margin-top: -50px;
+  overflow: hidden;
+}
+
+/* esconde o icones da nav em telas pequenos */
+nav .icon {
+  display: none;
+}
+
+/* mudar a cor dos links on hover */
+.navbar a:hover {
+  color: #2ab300;
+}
+
+/*style do hero*/
+.hero {
+  background-image: url(img/hero-image.jpg);
+  background-size: cover; /* Faz com que a imagem cubra toda a área do body */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-position: center; /* Centraliza a imagem no body */
+  height: 40vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.descricaoImovel p {
+  font-size: 3rem;
+}
 
 /*sliders*/
 
@@ -166,7 +145,6 @@ nav .icon {
   width: 100%;
   height: 100%;
 }
-
 
 #radio1:checked ~ .first {
   margin-left: 0;
@@ -249,33 +227,66 @@ nav .icon {
   background: #fff;
 }
 
-/*text box*/
+/* Responsivo para telas abaixo de 768px */
+@media (max-width: 768px) {
+  .slider {
+    width: 100%;
+    height: 300px; /* Reduz a altura do slider */
+  }
 
+  .slides {
+    width: 700%; /* Ajusta a largura das slides para comportar mais slides em telas pequenas */
+  }
+
+  .slide {
+    width: 14.28%; /* Ajusta a largura das slides para caberem na tela menor */
+  }
+
+  .manual-navigation {
+    width: 100%;
+    margin-top: -20px; /* Ajusta a posição da navegação manual */
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 20px; /* Reduz o espaçamento entre os botões de navegação */
+  }
+
+  /* Centralizar textos */
+  .text-center,
+  .slide,
+  .manual-navigation {
+    text-align: center;
+  }
+
+  .manual-btn {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+/*text box*/
 
 .text-boxes {
   display: grid;
   grid-auto-rows: auto;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .text-box {
   color: rgb(255, 255, 255);
   border: #124a43 solid 2px;
   border-radius: 15px;
-  margin: 15px;
+  margin: 1rem;
   background-color: rgb(160, 156, 156);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  padding: 20px;
-  font-size: 40px;
+  padding: 2rem;
+  font-size: 3rem;
 }
 
-
-
-.descricaoImovel{
+.descricaoImovel {
   text-indent: 20px;
   padding-block: 10px;
   margin: 20px;
@@ -286,24 +297,35 @@ nav .icon {
   padding-bottom: 90px;
   line-height: 60px;
 }
+
 /*style footer*/
-
-footer {
-  background-color: #333;
-  color: white;
-}
-
 .footer-content {
+  width: 100vw;
+  height: 9vh;
   display: flex;
   justify-content: space-between; /* Espaço entre os elementos */
   align-items: center; /* Centraliza verticalmente os elementos */
+  background-color: #333;
+  padding-bottom: 0rem auto;
 }
 
 .footer-content p {
   font-size: x-small;
   display: flex;
-  margin-top: 30px;
-  margin: 20px;
+  margin-top: 1rem;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+
+.footer-content a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  color: #ffffff;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-block: 1rem;
+  align-self: center; /* Centraliza o link no footer */
 }
 
 a {
@@ -314,21 +336,86 @@ a:hover {
   color: #1cb850;
 }
 
-@media (max-width: 600px) {
-  .footer-content p,
-  .footer-content a {
-    margin-block: 1px;
+/* Estilos para Mobile */
+
+/* O "responsive" class é adicionada a nav com JavaScriptquando usado clicks no icone. */
+@media (max-width: 768px) {
+  body {
+    background-color: #ccc;
+    background-size: contain; /* Ajusta para que a imagem fique toda visível, sem cortar */
+    background-position: top; /* Alinha a imagem ao topo */
+  }
+  .navbar {
+    flex-direction: column; /* Alinha os links verticalmente */
+    display: none;
+    width: 100vw; /* Largura completa do menu */
+    top: 60px; /* Posiciona abaixo do header */
+    left: 0;
+    background-color: #333; /* Cor de fundo do menu */
+    position: absolute;
   }
 
-  .footer-content a {
-    align-self: center; /* Centraliza o link no footer */
-    font-size: medium;
+  .navbar a {
+    margin: 0.5rem 0; /* Espaçamento entre os links */
+    text-align: right;
+  }
+
+  /* Exibe o ícone do menu em telas menores */
+  .icon {
+    display: block;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #fff; /* Cor do ícone */
+  }
+
+  /* Exibe a navbar quando o menu é clicado */
+  .navbar.responsive {
+    display: flex;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    text-align: right;
+  }
+
+  /* Estilo do logo */
+  header > a {
+    font-size: 1rem;
+  }
+
+  .baner-detalhes {
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: rgb(69, 237, 122);
+  }
+
+  .text-boxes {
+    gap: 1rem; /* Reduz o espaçamento entre as caixas de texto */
+  }
+
+  .text-box {
+    font-size: 1rem; /* Reduz o tamanho da fonte para melhor visualização em telas menores */
+    margin: 0.2rem;
+    padding-block: 0.5;
+    width: 75vw;
   }
 
   .footer-content p {
-    font-size: x-small;
+    font-size: 0.3rem;
     display: flex;
-    margin-top: 0px;
+    margin-top: 1rem;
+    color: #ffffff;
+    margin-left: 0rem;
+  }
+
+  .footer-content a {
+    text-decoration: none;
+    margin-top: 0rem;
+    color: #ffffff;
+    margin-left: 0.1rem;
+    margin-right: 1.2rem;
+    padding-block: 0rem;
+    font-size: 0.8rem;
   }
 }
-
