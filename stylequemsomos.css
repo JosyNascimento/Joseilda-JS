@@ -93,7 +93,8 @@ body {
 
 .text-boxes {
   width: 100%; /* Para que ocupe a largura total disponível */
-  
+  max-width: 1500px; /* Limite máximo de largura */
+  max-height: 1500px; /* Limite máximo de altura */
   height: auto; /* Ajusta a altura conforme o conteúdo */
   overflow: hidden; /* Oculta o conteúdo que ultrapassar o limite */
   margin: 0 auto; /* Centraliza a caixa */
@@ -110,7 +111,7 @@ body {
 
 .text-box1 h1 {
   background-color: rgba(128, 128, 128, 0.194);
-  height: 70px;
+  height: 70rem;
   color: rgb(255, 129, 3);
   text-align: center;
   font-size: 3rem;
@@ -134,49 +135,65 @@ body {
   line-height: 1.4;
 }
 
-.divisoria img {
-  display: flexbox;
-  padding: 10px;
-  margin-left: 100px;
-  align-items: center;
-  width: 500px;
-  height: 400px;
-  border-radius: 20px;
+.fotos {
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 20px;
+
 }
 
+.fotos img {
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Para que ocupe a largura total disponível */
+  max-width: 1500px; /* Limite máximo de largura */
+  max-height: 1500px; /* Limite máximo de altura */
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid #0d5439;
+  align-self: center; /* Centraliza verticalmente na célula do grid */
+  justify-self: center; /* Centraliza horizontalmente na célula do grid */
+
+}
 .text-boxes {
   display: grid;
   grid-auto-rows: auto;
   gap: 20px;
 }
 
+.text-box {
+  border: #124a43 solid 2px;
+  background-color: #1cb8504d;
+  color: rgb(23, 22, 22);
+  border-radius: 15px;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
 .text-box1 {
   color: rgb(255, 129, 3);
   border: #124a43 solid 2px;
   border-radius: 15px;
-  margin: 15px;
+  margin: 2rem;
   background-color: rgba(128, 128, 128, 0.194);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  padding: 20px;
-  font-size: 40px;
+  padding: 4rem;
+  font-size: 3rem;
 }
 
-.text-box {
-  border: #124a43 solid 2px;
-  border-radius: 15px;
-  margin: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  padding: 20px;
-  font-size: 40px;
-}
+
 
 
   footer {
@@ -274,18 +291,20 @@ header > a {
   height: 5rem;
   color: rgb(255, 129, 3);
   text-align: center;
-  font-size: 1rem;
-  padding-block: 3rem;
+  font-size: 1.5rem;
+  padding-block: 2rem;
 }
+
 
 .text-boxes h1 {
   height: 4vh;
-  color: rgb(255, 129, 3);
-  text-align: center;
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  margin: 0.3rem;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  width: 50vw;
 }
+
 
 .sobre-nós h3 {
   line-height: 1.4;
@@ -305,20 +324,24 @@ header > a {
   
 }
 
-.divisoria img {
-  display: flexbox;
-  padding: 1rem;
-  margin-left: 100px;
-  align-items: center;
-  width: 100vw;
-  height: 40ch;
-  border-radius: 20px;
+.fotos {
+  gap: 1rem;
+  padding: 0.5rem;
+
 }
 
-.text-boxes {
-  
-  grid-auto-rows: auto;
-  gap: 20px;
+.fotos img {
+  align-items: center;
+ margin-left: 0rem;
+ padding: 0.2rem;
+  width: 90%;
+  height: 60vh;
+}
+
+.text-boxes .text-box {
+  font-size: 14px; /* Ajuste para o tamanho desejado */
+  margin-bottom: 1rem; /* Diminui o espaço entre as caixas de texto */
+
 }
 
 .text-box1 h1 {
@@ -338,8 +361,8 @@ header > a {
 
 .text-box {
   border: #124a43 solid 2px;
-  background-color: #1cb8508e;
-  color: white;
+  background-color: #58cb7e4d;
+  color: rgb(6, 6, 6);
   border-radius: 15px;
   margin: 1rem;
   display: flex;
@@ -375,6 +398,6 @@ header > a {
     padding-block: 0rem;
     font-size: 0.8rem;
   }
-  }
+}
 
 
